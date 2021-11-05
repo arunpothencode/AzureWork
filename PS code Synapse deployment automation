@@ -1,13 +1,9 @@
 $inppara = Get-Content "C:\Users\arun.r\Documents\Sharath\names.txt"
 
-#$inpfiles = Get-ChildItem "C:\Users\arun.r\Documents\Sharath\*.json"
-#$inpfiles1 = $inpfiles.Name
-
-
 function ExecPipeline {
     param ([string]$PipelineName)
 
-    Get-AzSynapsePipeline -WorkspaceName pstestarun -Name $PipelineName
+    Set-AzSynapsePipeline -WorkspaceName pstestarun -Name $PipelineName -DefinitionFile "C:\Users\arun.r\Documents\Sharath\StandardPipeline_support_live\pipeline\$PipelineName.json"
 }
 
 foreach($i in $inppara){
@@ -15,3 +11,6 @@ foreach($i in $inppara){
         
 
 }
+
+
+
