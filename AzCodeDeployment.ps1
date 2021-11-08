@@ -1,4 +1,4 @@
-﻿$input = Read-Host "Select the component:
+﻿$comp = Read-Host "Select the component:
 ======================
 Press 1 for Pipelines
 Press 2 for Linkedservice
@@ -11,7 +11,7 @@ ctrl + c to abort the operation
 
 $inppara = Get-Content "C:\Users\arun.r\Documents\Sharath\names.txt"
 
-if($input -eq 1){
+if($comp -eq 1){
     
     function ExecPipeline {
         param ([string]$PipelineName)
@@ -30,7 +30,7 @@ if($input -eq 1){
 
 
                 }
-elseif($input -eq 2){
+elseif($comp -eq 2){
 
 
     function ExecLinkedService {
@@ -49,7 +49,7 @@ elseif($input -eq 2){
                            }continue
 
                    }
-elseif($input -eq 3){
+elseif($comp -eq 3){
 
 
     function ExecDataflow {
