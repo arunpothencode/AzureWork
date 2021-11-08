@@ -5,7 +5,7 @@ Press 2 for Linkedservice
 Press 3 for Dataflow
 Press 4 for Dataset
 
-Press ctrl + c to abort the operation
+ctrl + c to abort the operation
 ======================================>"
 
 
