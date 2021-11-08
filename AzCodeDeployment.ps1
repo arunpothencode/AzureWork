@@ -5,8 +5,8 @@ Press 2 for Linkedservice
 Press 3 for Dataflow
 Press 4 for Dataset
 
-ctrl + c to abort the operation
-================================>"
+Press ctrl + c to abort the operation
+======================================>"
 
 
 $inppara = Get-Content "C:\Users\arun.r\Documents\Sharath\names.txt"
