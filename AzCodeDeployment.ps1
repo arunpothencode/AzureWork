@@ -1,4 +1,7 @@
-﻿$inppara = Get-Content "C:\Users\arun.r\Documents\Sharath\names.txt"| Select-Object -Skip 1
+﻿$parameterfile = Get-Content "C:\Users\arun.r\Documents\Sharath\names.txt"
+$inppara = Get-Content "C:\Users\arun.r\Documents\Sharath\names.txt"| Select-Object -Skip 1
+Write-Host "########### Parameter file contains ##############"
+$parameterfile
 
 function ExecPipeline {
         param ([string]$PipelineName,[string]$WorkspaceName)
